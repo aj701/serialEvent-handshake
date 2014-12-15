@@ -6,7 +6,7 @@ void serialEvent (Serial myPort) {
       if (inputString.equals("A")) {
         myPort.clear();
         firstContact = true;
-        myPort.write('A');
+        myPort.write("A");
       }
     } else {
       int values[] = int(split(inputString, ','));
